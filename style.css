@@ -94,6 +94,25 @@ header{
   transition: .6s ease;
 }
 
+.nav-bar .logo{
+  color: var(--1st-color);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.nav-items a{
+color: var(--1st-color);
+font-size: var(--normal-font-size);
+font-weight: 500;
+}
+
+.nav-items a:not(:last-child){
+  margin-right: 50px;
+}
+
+.nav-items a:hover{
+  color: var(--2nd-color);
+}
 /*Home Section*/
 
 /*Common styles for all sections*/
