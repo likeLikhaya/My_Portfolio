@@ -49,7 +49,7 @@ html{
 }
 
 body{
-  color: var(--first-color);
+  color: #0e2431;
   background: var(--body-bg-color);
   margin: 2rem 0 0 0;
   transition: .5s ease;
@@ -95,13 +95,13 @@ header{
 }
 
 .nav-bar .logo{
-  color: var(--first-color);
+  color: #0e2431;
   font-size: 1.3em;
   font-weight: 600;
 }
 
 .nav-items a{
-color: var(--first-color);
+color: #0e2431;
 font-size: var(--normal-font-size);
 font-weight: 500;
 }
@@ -111,7 +111,7 @@ font-weight: 500;
 }
 
 .nav-items a:hover{
-  color: var(--second-color);
+  color: #6a59d1;
 }
 /*Home Section*/
 .home{
@@ -138,7 +138,7 @@ font-weight: 500;
 }
 
 .home-container .media-icons a{
-  color: var(--second-color);
+  color: #6a59d1;
   font-size: 1.5em;
   margin: 10px 0;
 }
@@ -188,14 +188,14 @@ font-weight: 500;
 }
 
 .home .scroll-down{
-  color: var(--first-color);
+  color: #0e2431;
   font-size: var(--normal-font-size);
   font-weight: 500;
   margin-top: 20px;
 }
 
 .home .scroll-down i{
-  color: var(--second-color);
+  color: #6a59d1;
   font-size: 1.2em;
   animation: arrow-down ease 2s infinite;
 }
@@ -236,15 +236,90 @@ font-weight: 500;
   font-size: 4.5em;
   font-weight: 800;
   margin-bottom: 2rem;
-  background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+  background: linear-gradient(to top, transparent 0%, #0e2431 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: .1;
 }
 
+.section-title-02{
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+}
 
+.section-title-02::before{
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: #6a59d1;
+}
+
+.container{
+  position: relative;
+  flex-direction: column;
+}
 /*About Section*/
+.about .container .content{
+  column-gap: 40px;
+  width: 100%;
+}
 
+.about-img{
+  position: relative;
+}
+
+.about-img img{
+  max-width: 100%;
+  min-width: 500px;
+  border-radius: 10px;
+}
+
+.about-info .description{
+  max-width: 600px;
+}
+
+.about-info .description h3{
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-info .description h4{
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-info .description h4 span{
+  color: #6a59d1;
+}
+
+.about-info .description p{
+  color: #777;
+  font-size: var(--normal-font-size);
+  margin-bottom: 15px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid var(--line-color);
+}
+
+.about-info .professional-list{
+  display: flex;
+  column-gap: 30px;
+}
+
+.about-info .professional-list .list-item h3{
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.about-info .professional-list .list-item span{
+  color: #777;
+  font-size: var(--small-font-size);
+}
 /*Skills section*/
 
 /*Services section*/
