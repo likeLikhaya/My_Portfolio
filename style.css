@@ -47,6 +47,7 @@ li{
 ::-webkit-scrollbar-thumb:hover{
   background: #454f6b;
 }
+
 /*Header*/
 header{
   z-index: 99999;
@@ -99,6 +100,7 @@ font-weight: 500;
 .nav-items a:hover{
   color: #6a59d1;
 }
+
 /*Home Section*/
 .home{
   position: relative;
@@ -253,6 +255,7 @@ font-weight: 500;
   position: relative;
   flex-direction: column;
 }
+
 /*About Section*/
 .about .container .content{
   column-gap: 40px;
@@ -376,6 +379,7 @@ font-weight: 500;
   font-size: 1em;
   font-weight: 500;
 }
+
 /*Services section*/
 
 /*portfolio/projects section*/
