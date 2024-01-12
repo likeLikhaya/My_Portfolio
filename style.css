@@ -256,7 +256,7 @@ font-weight: 500;
   flex-direction: column;
 }
 
-/*About Section*/
+/*    About Me Section     */
 .about .container .content{
   column-gap: 40px;
   width: 100%;
@@ -439,7 +439,7 @@ font-weight: 500;
   color: #0e2431;
   background: rgba(106, 89, 209, 0.1);
   font-size: 1em;
-  margin: 20px;
+  margin-bottom: 20px;
   padding: 15px 40px 40px 20px;
   border-radius: 5px;
 }
@@ -484,7 +484,7 @@ footer{
   width: 100%;
   margin-top: 50px;
   padding: 3rem 2rem;
-  color:#fff
+  color:#fff;
 }
 
 footer a{
@@ -512,6 +512,7 @@ footer a{
   font-weight: 300;
   margin-bottom: 30px;
 }
+
 .footer-container .info,
 .footer-container .follow{
   display: flex;
@@ -539,6 +540,13 @@ footer a{
   font-size: 1.5em;
   margin: 20px;
 }
+
+.footer-copyright p{
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
 
 /*    Media query max-width 1070px    */
 @media screen and (max-width: 1070px){
