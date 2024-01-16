@@ -13,6 +13,14 @@ window.addEventListener("scroll", function(){
 
 //Dark/Light theme
 
+// Back to top btn
+
+const scrollTopBtn = document.querySelector(".scrollToTop-btn");
+
+window.addEventListener("scroll", function(){
+    scrollTopBtn.classList.toggle("")
+})
+
 // Navigation menu items
 
 //Navigation Menu
