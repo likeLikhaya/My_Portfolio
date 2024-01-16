@@ -99,6 +99,10 @@ header.sticky .nav-bar{
   font-weight: 600;
 }
 
+.nav-items a.active{
+  color: #6a59d1;
+}
+
 .nav-items a{
 color: #0e2431;
 font-size: 1em;
@@ -563,4 +567,18 @@ footer a{
 /*    Media query max-width 1070px    */
 @media screen and (max-width: 1070px){
 
+}
+
+/*      Header navigation menu   */
+
+.navigation{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
 }
