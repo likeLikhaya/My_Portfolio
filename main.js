@@ -18,7 +18,7 @@ window.addEventListener("scroll", function(){
 const scrollTopBtn = document.querySelector(".scrollToTop-btn");
 
 window.addEventListener("scroll", function(){
-    scrollTopBtn.classList.toggle("active", this.window.scrollY > 500);
+    scrollTopBtn.classList.toggle("active", window.scrollY > 500);
 
 });
 
@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
 
     sections.forEach(current =>{
         let sectionHeight = current.offsetHeight;
-        let sectTop = current.offsetTop - 50;
+        let sectionTop = current.offsetTop - 50;
         let id = current.getAttribute("id");
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
@@ -50,8 +50,22 @@ window.addEventListener("scroll", () => {
 
 //Navigation Menu
 
+const menuBtn = document.querySelector(".nav-menu-btn");
+const closeBtn = document.querySelector(".nav-close-btn");
+const navigation = document.querySelector(".navigation");
+
+menuBtn.addEventListener("click", () => {
+    navigation.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+    navigation.classList.remove("active");
+});
+
+
 //Scroll animations reveal
 
 //Common reveal options for animations
 
 //Target element for specific animations
+
