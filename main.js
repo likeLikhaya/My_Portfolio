@@ -1,3 +1,10 @@
+// JavaScript for Randomizing Initial Rotation
+document.addEventListener("DOMContentLoaded", function () {
+    const skillIcons = document.querySelectorAll(".skill-icon");
+    skillIcons.forEach((icon) => {
+      icon.style.transform = `rotate(${Math.random() * 360}deg)`;
+    });
+});
 // Navigation Bar
 
 window.addEventListener("scroll", function(){

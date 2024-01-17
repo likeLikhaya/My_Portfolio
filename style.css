@@ -408,6 +408,28 @@ font-weight: 500;
   font-weight: 500;
 }
 
+/* CSS for Rotating Wheel */
+.skills-wheel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Adjust height as needed */
+}
+
+.skill-icon {
+  font-size: 2em;
+  margin: 0 20px; /* Adjust margin as needed */
+  opacity: 0.5; /* Adjust opacity as needed */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Rotate Icons on Hover */
+.skill-icon:hover {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+
 /*Services section*/
 
 /*portfolio/projects section*/
@@ -673,4 +695,31 @@ footer a{
   width: 100%
 }
 
+.about-info .professional-list{
+  flex-direction: column;
+}
+
+.about-info .professional-list .list-item{
+  justify-content: start;
+}
+
+/*  CONTACT FORM */
+
+.contact .content{
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.contact .contact-left{
+  margin-bottom: 40px;
+}
+
+.contact-form .second-row {
+  flex-direction: column;
+}
+
+.contact-form .second-row input{
+  width: 100%;
+}
+/*    FOOTER SECTION    */
 }
