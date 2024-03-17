@@ -113,19 +113,61 @@
         <h2 class="section-title-02">Skills</h2>
         <div class="skills-wheel">
           <!-- Skills Icons -->
-          <div class="skill-icon"><i class="fab fa-html5"></i></div>
-          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-          <div class="skill-icon"><i class="fab fa-js"></i></div>
-          <div class="skill-icon"><i class="fab fa-react"></i></div>
-          <div class="skill-icon"><i class="fab fa-node"></i></div>
-          <div class="skill-icon"><i class="fab fa-python"></i></div>
-          <div class="skill-icon"><i class="fab fa-github"></i></div>
+          <div class="skill-icon" data-icon="HTML5">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="skill-icon" data-icon="CSS">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="skill-icon" data-icon="JavaScript">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="skill-icon" data-icon="Node.js">
+            <i class="fab fa-node"></i>
+          </div>
+          <div class="skill-icon" data-icon="Python">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="skill-icon" data-icon="React">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="skill-icon" data-icon="Figma">
+            <i class="fab fa-figma"></i>
+          </div>
+          <div class="skill-icon" data-icon="Balsamiq">
+            <i class="fab fa-balsamiq"></i>
+          </div>
+          <div class="skill-icon" data-icon="Firebase">
+            <img src="images/firebase.png" alt="Firebase Icon" />
+          </div>
+
           <!-- Add more skill icons as needed -->
         </div>
       </div>
     </section>
 
     <!--     Contact Section    -->
+    <script>
+      const formRef = useRef();
+
+      const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+          .sendForm("service_00ku9j4", "template_xuab666", formRef.current, {
+            publicKey: "FRhyKNtvM70NdMjaM",
+          })
+          .then(
+            () => {
+              alert("Email sent successfully!");
+            },
+            (error) => {
+              alert("FAILED...", error.text);
+            }
+          );
+      };
+    </script>
+
     <section class="contact section" id="contact">
       <div class="container flex-center">
         <h1 class="section-title-01">Contact Me</h1>
@@ -143,7 +185,7 @@
                   <i class="fas fa-envelope"></i> Email Address
                 </h3>
                 <span
-                  ><a href="malito:likhayakalimashe@icloud.com"
+                  ><a href="mailto:likhayakalimashe@icloud.com"
                     >likhayakalimashe@icloud.com</a
                   ></span
                 >
@@ -158,18 +200,14 @@
           </div>
           <div class="contact-right">
             <p>Let's <span>get in touch</span></p>
-            <form
-              action="https://formspree.io/f/mzbnzoqd"
-              method="POST"
-              class="contact-form"
-            >
+            <form ref="{formRef}" onSubmit="{sendEmail}" class="contact-form">
               <!-- Your form fields go here -->
               <div class="first-row">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="user_name" placeholder="Name" />
               </div>
               <div class="second-row">
-                <input type="text" name="email" placeholder="Email" />
-                <input type="text" name="subject" placeholder="Subject" />
+                <input type="email" name="user_email" placeholder="Email" />
+                <input type="text" name="message" placeholder="Subject" />
               </div>
               <div class="third-row">
                 <textarea
